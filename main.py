@@ -6,7 +6,7 @@ app = radox()
 
 @app.route("/")
 def index():
-    return "Hello World from Radox 🖥️🤩"
+    return "Hello World from Radox :)"
 
 @app.route("/home")
 def home():
@@ -15,7 +15,9 @@ def home():
 @app.route("/about")
 def about():
     home()
-    return "A simple WSGI based python backend web framework which can build modern web applications."
+    return "A simple WSGI based python backend web framework which can build modern web applications.
+            Authors:        Palani GA
+            Documentation:  Ramesh G"
 
 if __name__=='__main__':
     server = make_server('127.0.0.1', 3301, app)
