@@ -7,6 +7,8 @@ app = radox()
 @app.route("/")
 def index():
     return "Hello World from Radox :)"
+    return "/home - Home Page"
+    return "/about- About Page"
 
 @app.route("/home")
 def home():
